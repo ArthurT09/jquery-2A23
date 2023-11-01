@@ -5,22 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introdução jQuery</title>
+    <link rel="stylesheet" href="style.css">
     <!--Chamando biblioteca jQuery-->
     <script type="text/javascript" src="jquery.js"></script>
     <script>
     $(document).ready(function () {
-    $("#listaOrdenada").css("color", "red");
+    $("#listaOrdenadaUm").css("color", "red");
+    $(".listaOrdenadaDois").css("color", "green");
+    //$("ul").css("color", "blue");
+    $("p").css("color", "blue");
     });
     </script>
-
 </head>
-
 <body>
-    <ul id="listaOrdenada">
+    <ul id="listaOrdenadaUm">
         <li>Link 01</li>
         <li>Link 02</li>
         <li>Link 03</li>
     </ul>
+    <ul class="listaOrdenadaDois">
+        <li>Link 01</li>
+        <li>Link 02</li>
+        <li>Link 03</li>
+    </ul>
+    <p>Texto</p>
 
 
 </body>
